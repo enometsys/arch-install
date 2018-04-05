@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "arch-install",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Arch installation script",
   "author": "John Leonard Tubig <tubig.jlu@gmail.com>",
   "license": "MIT",
