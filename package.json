@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "arch-install",
+  "version": "0.0.0",
+  "description": "Arch installation script",
+  "author": "John Leonard Tubig <tubig.jlu@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enometsys/arch-install.git"
+  }
+}

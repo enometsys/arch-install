@@ -1,0 +1,21 @@
+# IntelliJ project files
+.idea
+
+# VSCode project files
+.vscode
+
+# Nodejs
+node_modules/
+npm-debug.log*
+yarn-error.log
+src/logs
+
+# Build
+dist/
+docs/
+.env
+stats-*
+
+# Wiki, separate repo
+wiki/
+
