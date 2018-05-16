@@ -128,11 +128,9 @@ echo "Installing system utils..."
 ## file system
 pacman -Syu --noconfirm ntfs-3g exfat-utils
 ## fonts
-pacman -Syu --noconfirm ttf-dejavu
+pacman -Syu --noconfirm ttf-dejavu noto-fonts-emoji
 ## text processing
 pacman -Syu --noconfirm gedit vim
-## shell
-pacman -Syu --noconfirm terminator
 ## cli
 pacman -Syu --noconfirm unrar xclip wget curl git
 
@@ -234,6 +232,7 @@ christian-kohler.path-intellisense
 wayou.vscode-todo-highlight
 octref.vetur
 robertohuertasm.vscode-icons
+CoenraadS.bracket-pair-colorizer
 EOF
 sudo -u $USER mkdir -p .config/Code/User
 sudo -u $USER curl -o .config/Code/User/settings.json "https://raw.githubusercontent.com/enometsys/arch-install/$INSTALLER_VERSION/vs-code-user-settings.json"
@@ -242,7 +241,7 @@ pacman -Syu --noconfirm mongodb mongodb-tools
 systemctl enable  mongodb
 sudo -u $USER yaourt -Syu --aur --noconfirm mongodb-compass
 ## platforms
-sudo -u $USER yaourt -Syu --aur --noconfirm nodejs-heroku-cli
+sudo -u $USER yaourt -Syu --aur --noconfirm heroku-cli
 ## protocols
 pacman -Syu --noconfirm openssh weechat
 sudo -u $USER yaourt -Syu --aur --noconfirm postman
