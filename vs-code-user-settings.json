@@ -8,7 +8,6 @@
       "**/.hg": true,
       "**/CVS": true,
       "**/.DS_Store": true,
-      "**/build": true,
       "**/node_modules": true
   },
   "search.exclude": {
@@ -16,8 +15,7 @@
       "**/bower_components": true,
       "**/dist": true,
       "**/docs": true,
-      "**/build": true,
-      "**/functions": true
+      "**/build": true
   },
   "editor.fontSize": 12,
   "editor.tabSize": 2,
