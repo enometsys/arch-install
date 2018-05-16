@@ -28,9 +28,3 @@ antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
-
-# Tmux
-# tmux attach &> /dev/null
-# if [[ ! $TERM =~ screen ]]; then
-#	exec tmux
-# fi
