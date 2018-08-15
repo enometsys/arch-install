@@ -190,7 +190,7 @@ visudo -c -f /etc/sudoers
 
 # Configure userspace
 echo "Configuring userspace of $USER..."
-cd /home/metsys
+cd "/home/$USER"
 
 # Yaourt
 echo "Installing yaourt..."
