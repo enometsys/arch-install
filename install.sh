@@ -220,7 +220,7 @@ nvm install node
 ## browser
 sudo -u $USER yaourt -Syu --aur --noconfirm google-chrome
 ## ide
-sudo -u $USER yaourt -Syu --aur --noconfirm otf-fira-code visual-studio-code-bin
+sudo -u $USER yaourt -Syu --aur --noconfirm otf-fira-code visual-studio-code-bin splitsh-lite-git
 cat << EOF | while read ext; do sudo -u $USER code --install-extension $ext; done;
 mikestead.dotenv
 EditorConfig.editorconfig
