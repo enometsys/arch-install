@@ -228,7 +228,6 @@ donjayamanne.githistory
 chenxsan.vscode-standardjs
 christian-kohler.npm-intellisense
 roblourens.npm-link-status
-christian-kohler.path-intellisense
 wayou.vscode-todo-highlight
 octref.vetur
 robertohuertasm.vscode-icons
@@ -244,7 +243,6 @@ sudo -u $USER yaourt -Syu --aur --noconfirm mongodb-compass
 sudo -u $USER yaourt -Syu --aur --noconfirm heroku-cli
 ## protocols
 pacman -Syu --noconfirm openssh weechat
-sudo -u $USER yaourt -Syu --aur --noconfirm postman
 ## runtime/devkit
 pacman -Syu --noconfirm jdk9-openjdk texlive-core
 ## arduino
