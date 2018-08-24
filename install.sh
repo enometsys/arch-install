@@ -254,6 +254,12 @@ gpasswd -a $USER bumblebee
 gpasswd -a $USER uucp
 gpasswd -a $USER lock
 
+# Fixes
+# Error: vscode hijacks the directory viewer
+# Fix: add in ~/.config/mimeapps.list
+# [Default Applications]
+# inode/directory = org.gnome.Nautilus.desktop
+
 # First login setup
 # Scan other OS for dual booting
 if [ $DUAL_BOOT ]
