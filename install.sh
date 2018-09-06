@@ -207,7 +207,7 @@ rm -rf package-query yaourt
 
 # Zsh
 echo "Configuring zsh..."
-sudo -u $USER yaourt -Syu --aur --noconfirm antigen-git
+sudo -u $USER yaourt -Syua --noconfirm antigen-git
 sudo -u $USER curl -o .zshrc "https://raw.githubusercontent.com/enometsys/arch-install/$INSTALLER_VERSION/.zshrc"
 cat .zshrc | sudo -u $USER zsh
 
@@ -218,9 +218,9 @@ pacman -Syu --noconfirm yarn
 nvm install --lts
 nvm install node
 ## browser
-sudo -u $USER yaourt -Syu --aur --noconfirm google-chrome
+sudo -u $USER yaourt -Syua --noconfirm google-chrome
 ## ide
-sudo -u $USER yaourt -Syu --aur --noconfirm otf-fira-code visual-studio-code-bin splitsh-lite-git
+sudo -u $USER yaourt -Syua --noconfirm otf-fira-code visual-studio-code-bin splitsh-lite-git
 cat << EOF | while read ext; do sudo -u $USER code --install-extension $ext; done;
 mikestead.dotenv
 EditorConfig.editorconfig
@@ -238,15 +238,21 @@ sudo -u $USER curl -o .config/Code/User/settings.json "https://raw.githubusercon
 ## db
 pacman -Syu --noconfirm mongodb mongodb-tools
 systemctl enable  mongodb
-sudo -u $USER yaourt -Syu --aur --noconfirm mongodb-compass
+sudo -u $USER yaourt -Syua --noconfirm mongodb-compass
 ## platforms
-sudo -u $USER yaourt -Syu --aur --noconfirm heroku-cli
+sudo -u $USER yaourt -Syua --noconfirm heroku-cli
 ## protocols
 pacman -Syu --noconfirm openssh weechat
 ## runtime/devkit
-pacman -Syu --noconfirm jdk9-openjdk texlive-core
+pacman -Syu --noconfirm jdk10-openjdk texlive-core
 ## arduino
 pacman -Syu --noconfirm arduino arduino-docs arduino-avr-core
+## git utils
+sudo -u $USER yaourt -Syua --noconfirm  splitsh-lite-git
+## android
+# TODO: enable multilib first
+# pacman -Syu --noconfirm jdk8-openjdk
+# sudo -u $USER yaourt -Syua --noconfirm android-sdk android-sdk-build-tools andrdoid-sdk-platform-tools
 
 # Permissions
 echo "Configuring display..."
